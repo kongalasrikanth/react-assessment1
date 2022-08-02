@@ -20,7 +20,7 @@ function Title() {
             </div>
             <div className="aem-GridColumn aem-GridColumn--default--8">
               <div className="card-img">
-                <img alt="Venia_alt" src="https://media.istockphoto.com/photos/business-network-concept-customer-support-shaking-hands-picture-id1256603011?k=20&m=1256603011&s=612x612&w=0&h=ZoZ6LyKdwAqubUtMloUivfG1EYiIDUTJytFX-KK1Xdc=" className="card-img-top" alt="" />
+                <img alt="Venia_alt" src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" className="card-img-top"/>
               </div>
             </div>
           </div>

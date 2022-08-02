@@ -889,7 +889,7 @@ body {
 
 .navbar .menubar {
   display: flex;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .navbar .nav-container li {
@@ -958,13 +958,17 @@ body {
   transform-origin: 0% 100%;
   transition: transform 0.4s ease-in-out;
 }
-
+.navbar{
+  background-color: #1363DF !important;
+}
 .navbar .menubar {
   padding-top: 120px;
   height: 97vh;
   width: 197%;
   transform: translate(-150%);
   display: flex;
+  z-index: 2;
+    position: inherit !important;
   flex-direction: column;
   margin-left: -40px;
   padding-left: 50px;
@@ -1529,58 +1533,4 @@ a {
   padding: 2px 5px;
   vertical-align: top;
   margin-left: -10px;
-}
-.carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
-    filter: invert(100%);
-    width: 6%;
-}
-a.carousel-control-prev{
-    width:9%;
-}
-a.carousel-control-next{
-    width:9%;
-}
-span.carousel-control-prev-icon, span.carousel-control-next-icon{
-    width: 3rem;
-    height: 3rem;
-}
-.Landing_left {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.leftcontent{
-        height: 273px;
-    width: 552px;
-}
-.leftcontent H2{
-    font-size:48px;
-}
-.leftcontent p{
-    font-size:16px;
-}
-.leftcontent button p{
-    font-size: 14px;
-    font-family: Muli;
-    font-weight:700;
-}
-@media only screen and (max-width: 768px){
-       .carousel-indicators button{
-        padding: 1px;
-        width: 10px !important;
-        border-radius: 50%;
-        height: 10px !important;
-        filter: invert(100%);
-    } 
-    a.carousel-control-prev{
-    display:none;
-}
-a.carousel-control-next{
-   display:none;
-}
-.Landing-right{
-    display:none;
-}
 }

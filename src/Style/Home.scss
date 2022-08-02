@@ -718,9 +718,9 @@ input[type="checkbox"] {
 }
 
 .logo {
-	font-size: 24px;
+	// font-size: 24px;
 	letter-spacing: 6px;
-	line-height: 61px;
+	// line-height: 61px;
 }
 
 .logo a {
@@ -821,6 +821,12 @@ input[type="checkbox"] {
 	font-size: 3rem;
 	font-family: "Source Serif Pro", serif;
 }
+.hr_line{
+    display: table;
+	text-align: center;
+	position: relative;
+    right: 116px;
+}
 
 .hr_lines hr {
 	background-color: #1f39ff !important;
@@ -877,16 +883,23 @@ input[type="checkbox"] {
 		margin-right: 20px;
 		margin-bottom: 2px;
 	}
+	.slider-div{
+		position: absolute;
+		background-color: unset !important;
+	}
 .flex{
 	display: block !important;
 }
 .background-grid{
-	width: 50% !important;
+	width: 100% !important;
 }
 	.sort {
 		margin-left: 200px;
 	}
-
+	.hr_line{
+		right: 47px;
+		bottom: 234px;
+	}
 	.mobile_hero_banner {
 		display: block !important;
 	}
@@ -944,9 +957,9 @@ input[type="checkbox"] {
 	margin-top: 1rem;
 }
 
-.nav {
-	background-color: #1363DF !important;
-}
+// .nav {
+// 	background-color: #1363DF !important;
+// }
 
 .each-slide>div {
 	height: 300px;
@@ -984,7 +997,7 @@ input[type="checkbox"] {
 .card-footer1 {
 	padding: 1rem 1.25rem;
 	background-color: #1c1b1b;
-	border-bottom: 3px solid blue;
+	border-bottom: 8px solid blue;
 	color: #fff;
 }
 
@@ -1043,4 +1056,12 @@ input[type="checkbox"] {
 .navbar-dark .navbar-nav .nav-link {
 	color: #fff !important;
 	font-weight: 400 !important;
+}
+.react-slideshow-container .default-nav{
+	background: none !important;
+}
+.line{
+	width:100px;
+	height: 5px;
+	background: blue;
 }

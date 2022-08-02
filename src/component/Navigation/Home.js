@@ -1,6 +1,7 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import menshero from '../../Images/mens-hero.jpg';
+import map from '../../Images/map-pin.jpg';
 import bottombanner from '../../Images/bottombanner.jpg';
 import { Link } from 'react-router-dom';
 import '../../Style/Home.scss';
@@ -143,9 +144,10 @@ export default function Home({ name, title }) {
                                     <h5 className="card-title1">Conquer your<br /> next adventure</h5>
                                     <h6 className="card-h6">Lorem Ipsum Dolor Tempor</h6><br />
                                     <button className='custom-button1'>SHOP DEVICES</button>
-                                    {/* <div className="hr_lines">
-                  <hr />
-                </div> */}
+                                    <div className="hr_line">
+                                        <img src={map} />
+                 <div className='line'></div>
+                </div>
                                 </div>
                             </div>
                         </div>
