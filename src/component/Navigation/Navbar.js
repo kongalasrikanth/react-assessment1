@@ -31,7 +31,7 @@ const Navbar = ({ setCategory, selectedCategory, ...props }) => {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold">
-                                <li className='nav-link'><a href='/home'>Home</a></li>
+                                <li className='nav-link'><a href='/'>Home</a></li>
                                 {
                                     categories?.map((category, i) =>
 
@@ -43,8 +43,8 @@ const Navbar = ({ setCategory, selectedCategory, ...props }) => {
                             </ul>
                             <div className="buttons">
 
-                                <NavLink to="/" className="login"> < FiSearch />Search</NavLink>
-                                <NavLink to="/" className="signin" ><FiUser />Signin</NavLink>
+                                {/* <NavLink to="/" className="login"> < FiSearch />Search</NavLink>
+                                <NavLink to="/" className="signin" ><FiUser />Signin</NavLink> */}
                                 <NavLink to="/cart" className="cart"> <FiShoppingBag />
                                     {' '}
                                     {props.countCartItems ? (

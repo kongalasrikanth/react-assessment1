@@ -1,5 +1,5 @@
 import './App.scss';
-import Header from './component/Navigation/Header';
+import Header from './component/Navigation/Mens';
 import Navbar from './component/Navigation/Navbar';
 import { Routes, Route } from 'react-router-dom';
 import Productlist from './component/Products/Productlist';
@@ -7,7 +7,7 @@ import Product from './component/Products/Product';
 import Basket from './component/Checkout/Basket';
 import { useEffect, useState } from 'react';
 import Detail from './component/Navigation/Detail';
-import Review from './component/Checkout/Review';
+import Review from './component/Checkout/CheckoutStage3';
 import Filter from './component/Products/Filter';
 import Footer from './component/Navigation/Footer';
 // import Signin from './component/Auth/';
@@ -17,7 +17,8 @@ import Navbardesc from './component/Navigation/Navbardesc';
 import Shipping from './component/Checkout/Shipping';
 import Home from './component/Navigation/Home';
 import Checkout from './component/Checkout/CheckoutStage1';
-import Guestcheckout from './component/Checkout/Guestcheckout';
+import Guestcheckout from './component/Checkout/CheckoutStage2';
+import OrderSuccess from './component/Checkout/OrderSuccessful';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -56,14 +57,15 @@ function App() {
       <Navbardesc countCartItems={cartItems.length} setCategory={setCategory} selectedCategory={category} />
       <Routes>
         <Route exact path='/' element={<Home />} />
-        <Route exact path='/Header' element={<Header category={category} />} />
+        <Route exact path='/Mens' element={<Header category={category} />} />
         <Route exact path='/about' element={<Detail />} />
         <Route exact path='/filter' element={<Filter />} />
         <Route exact path='/Productlist' element={<Productlist category="" />} />
         {/* <Route exact path='/' element={<Signin />} /> */}
-        <Route exact path='/Guestcheckout' element={<Guestcheckout />} />
-        <Route exact path='/Review' element={<Review />} />
-        <Route exact path='/Checkout' element={<Checkout />} />
+        <Route exact path='/Checkout2' element={<Guestcheckout />} />
+        <Route exact path='/Checkout3' element={<Review />} />
+        <Route exact path='/Checkout1' element={<Checkout />} />
+        <Route exact path='/OrderSuccessful' element={<OrderSuccess />} />
         {/* <Route exact path='/signup' element={<Signup />} />
         <Route exact path='/' element={<Signout />} /> */}
         <Route exact path='/products/:id' element={<Product onAdd={onAdd} />} />

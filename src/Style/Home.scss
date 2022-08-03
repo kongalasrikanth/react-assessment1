@@ -180,8 +180,9 @@ hr {
 
 .card {
 	transition: all 1s linear;
-	height: 400px;
-	margin: 15px;
+	// width: 349px;
+height: 320px;
+	margin: 5px;
 }
 
 .card-footer {
@@ -202,16 +203,7 @@ p {
 	position: relative;
 	overflow: hidden;
 
-	// padding: 1rem 1rem !important;
-	&:hover {
-		.card-img-top {
-			transform: scale(1.2);
-		}
 
-		.cart-btn {
-			transform: translate(0, 0);
-		}
-	}
 }
 
 .card-img-top {
@@ -417,8 +409,8 @@ p {
 }
 
 .navbar {
-	padding: 1.5rem 0rem 0rem 2rem !important;
-	border-bottom: 1px solid #d3d3d3;
+	// position: fixed !important;
+	z-index: 5 !important;
 }
 
 .payPal {
@@ -450,7 +442,7 @@ button {
 	border: none !important;
 	padding: 4px;
 	width: 180px;
-	border-radius: 5px !important;
+	border-radius: 10px !important;
 }
 
 .custom-button {
@@ -463,6 +455,7 @@ button {
 	background-color: #1B252C;
 	border: 2px solid #fff !important;
 	color: #fff;
+	border-radius: 11px !important;
 }
 
 .page_container {
@@ -805,10 +798,7 @@ input[type="checkbox"] {
 	font-family: "Source Serif Pro", serif;
 }
 
-.card-title1 {
-	color: white;
-	font-size: 2rem;
-}
+
 
 .card-h6 {
 	color: white !important;
@@ -875,7 +865,11 @@ input[type="checkbox"] {
 		display: none !important;
 	}
 }
-
+@media screen and (max-width: 765px) {
+	.desktop_view{
+		display: none !important;
+	}
+  }
 @media only screen and (min-width: 320px) and (max-width: 765px) {
 	.mobile_card {
 		margin-top: -35px;
@@ -883,8 +877,40 @@ input[type="checkbox"] {
 		margin-right: 20px;
 		margin-bottom: 2px;
 	}
+	.card-body1{
+		right: 19px !important;
+		h5{
+			font-size: 36px !important;
+		}
+	}
+	.card-img-top1{
+		width: auto !important;
+		height: auto !important;
+	}
+	.menshero{
+		width: auto !important;
+		height: auto !important;
+	}
+	.btn-flex{
+		flex-wrap: wrap;
+		gap: 12px;
+		justify-content: center;
+	}
+	.hr_lines hr {
+		margin: 2rem 4rem;
+		width: 124px;
+		opacity: 3;
+	}
+	
+	.desktop_view_hero{
+		display: none;
+	}
+	.mobile_view{
+		display: block !important;
+	}
 	.slider-div{
 		position: absolute;
+		padding: 19px;
 		background-color: unset !important;
 	}
 .flex{
@@ -897,8 +923,8 @@ input[type="checkbox"] {
 		margin-left: 200px;
 	}
 	.hr_line{
-		right: 47px;
-		bottom: 234px;
+		right: 0px;
+    bottom: 360px;
 	}
 	.mobile_hero_banner {
 		display: block !important;
@@ -993,64 +1019,82 @@ input[type="checkbox"] {
 	top: -64px;
 	margin-bottom: 30px;
 }
+.legging-flex{
+	display: flex ;
+	justify-content: center;
+	position: relative;
+	top: -64px;
+	margin-bottom: 30px;
+}
 
 .card-footer1 {
 	padding: 1rem 1.25rem;
 	background-color: #1c1b1b;
 	border-bottom: 8px solid blue;
 	color: #fff;
+	h5{
+		font-size: 24px;
+	}
+	p{
+		font-size: 16px;
+	}
 }
 
 .card-body1 {
-	height: 21rem;
-	width: 450px;
-	padding: 70px;
-	background-color: #1b252c;
-	margin-top: 40px;
-	vertical-align: middle;
-	display: table-cell;
+	width: 554px;
+    height: 432px;
+    position: relative;
+    padding: 0px 64px;
+    background-color: #1b252c;
+    vertical-align: middle;
+    display: table-cell;
+    bottom: 15px;
+    right: 20px;
+	h5 {
+		color: white;
+		font-size: 48px;
+	}
+	h6{
+		font-size: 20px;
+	}
 }
 
 .card-img-top1 {
-	height: 20rem !important;
-	margin-top: 8px;
-	width: 101% !important;
+	width: 836px;
+    height: 400px;
 }
 
 .btn-flex {
 	gap: 20px;
 	display: flex;
-	margin-top: 10px;
+	margin-top: 26px;
 }
 
 .section3 {
-	display: table-cell;
-	vertical-align: middle;
-	// height: 418px !important;
-	padding: 69px;
+	display: revert;
+    vertical-align: middle;
+    padding: 41px 41px;
+	h2 {
+		font-size: 48px;
+		font-weight: bold;
+	}
+	h4{
+		font-size: 20px;
+	}
+	p{
+		font-size: 16px;
+	}
 }
 
-.section3 h2 {
-	font-size: 48px;
-	font-weight: bold;
-}
 
 .background-grid {
 	background-color: #fff !important;
 	width: 19% ;
 }
-.section3{
-	padding: 20px;
-}
-.slider-div {
-    padding: 19px;
-}
-.btn-flex{
-	flex-wrap: wrap;
-    gap: 12px;
-}
+
 .menshero {
-	width: 100% !important;
+	width: 481px;
+    height: 399px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -1064,4 +1108,7 @@ input[type="checkbox"] {
 	width:100px;
 	height: 5px;
 	background: blue;
+}
+.mobile_view{
+	display: none;
 }

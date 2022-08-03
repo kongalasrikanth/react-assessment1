@@ -1,7 +1,7 @@
 import React from 'react'
 import Productlist from '../Products/Productlist';
 import Filter from '../Products/Filter';
-import Title from '../Navigation/Title';
+import Title from './Title';
 import Breadcrumb from '../Products/Breadcrumb';
 
 function Header({ category }) {

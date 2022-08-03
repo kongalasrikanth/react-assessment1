@@ -88,7 +88,7 @@ export default function Checkout() {
             </Row>
 
           </Form>
-          <button className='btn-shipping-1'><p>CONTINUE TO SHIPPING METHOD</p></button>
+          <button className='btn-shipping-1'><p><a href="/Checkout2">CONTINUE TO SHIPPING METHOD</a></p></button>
           <Form>
             <Row className="mb-4">
               <Form.Group as={Col} controlId="formGridState">

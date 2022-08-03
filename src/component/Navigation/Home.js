@@ -1,8 +1,8 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
-import menshero from '../../Images/mens-hero.jpg';
-import map from '../../Images/map-pin.jpg';
-import bottombanner from '../../Images/bottombanner.jpg';
+import menshero from '../../Images/legging.png';
+import map from '../../Images/map-pin.svg';
+import bottombanner from '../../Images/adventure.png';
 import { Link } from 'react-router-dom';
 import '../../Style/Home.scss';
 import 'react-slideshow-image/dist/styles.css';
@@ -10,20 +10,20 @@ import 'react-slideshow-image/dist/styles.css';
 export default function Home({ name, title }) {
     const slideImages = [
         {
-            url: 'https://images.unsplash.com/photo-1484186304838-0bf1a8cff81c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80',
+            url: 'https://i.ibb.co/vJ4VZcr/slider.jpg',
         },
         {
-            url: 'https://images.unsplash.com/photo-1525430182374-bf7e61d4f220?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=540&q=80',
+            url: 'https://i.ibb.co/vJ4VZcr/slider.jpg',
 
         },
         {
-            url: 'https://images.unsplash.com/photo-1577375774296-1480089cb555?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80',
+            url: 'https://i.ibb.co/vJ4VZcr/slider.jpg',
         },
     ];
 
     return (
         <React.Fragment>
-            <div >
+            <div>
                 <div className="aem-Grid  aem-Grid--12">
                     <div className='aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12'>
                         <Slide>
@@ -41,7 +41,7 @@ export default function Home({ name, title }) {
 
                                         </div>
                                         <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12'>
-                                            <img  className='slider-div1' src={slideImage.url} />
+                                            <img className='slider-div1' src={slideImage.url} />
 
                                         </div>
 
@@ -55,8 +55,8 @@ export default function Home({ name, title }) {
                     <div className='aem-GridColumn aem-GridColumn--default--2 background-grid aem-GridColumn--phone--12'>
                         <div className="card">
                             <div className="img-container">
-                                <Link to="/Header">
-                                    <img  src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" alt="product" className="card-img-top" />
+                                <Link to="/Mens">
+                                    <img src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg" alt="product" className="card-img-top" />
                                 </Link>
                             </div>
                             <div className="card-footer1">
@@ -70,8 +70,8 @@ export default function Home({ name, title }) {
                     <div className='aem-GridColumn aem-GridColumn--default--2 background-grid aem-GridColumn--phone--12'>
                         <div className="card">
                             <div className="img-container">
-                                <Link to="/Header">
-                                    <img  src='https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg' alt="product" className="card-img-top" />
+                                <Link to="/Mens">
+                                    <img src='https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg' alt="product" className="card-img-top" />
                                 </Link>
                             </div>
                             <div className="card-footer1">
@@ -85,8 +85,8 @@ export default function Home({ name, title }) {
                     <div className='aem-GridColumn aem-GridColumn--default--2 background-grid aem-GridColumn--phone--12'>
                         <div className="card">
                             <div className="img-container">
-                                <Link to="/Header">
-                                    <img  src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg" alt="product" className="card-img-top" />
+                                <Link to="/Mens">
+                                    <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" alt="product" className="card-img-top" />
                                 </Link>
                             </div>
                             <div className="card-footer1">
@@ -100,8 +100,8 @@ export default function Home({ name, title }) {
                     <div className='aem-GridColumn aem-GridColumn--default--2 background-grid aem-GridColumn--phone--12'>
                         <div className="card">
                             <div className="img-container">
-                                <Link to="/Header">
-                                    <img  src="https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg" alt="product" className="card-img-top" />
+                                <Link to="/Mens">
+                                    <img src="https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg" alt="product" className="card-img-top" />
                                 </Link>
                             </div>
                             <div className="card-footer1">
@@ -114,7 +114,7 @@ export default function Home({ name, title }) {
                     </div>
 
                 </div>
-                <div className="aem-Grid aem-Grid--12 flex">
+                <div className="aem-Grid aem-Grid--12 legging-flex desktop_view">
                     <div className='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12'>
                         <div className='section3'>
                             <h2>Take off in the new <br />Signature Legging</h2>
@@ -123,20 +123,52 @@ export default function Home({ name, title }) {
                             <div className='btn-flex'>
                                 <button className='custom-button'>SHOP COLLECTION</button>
                                 <button>SHOP NOW</button>
+
                             </div>
-                            <div className="hr_lines">
-                  <hr />
-                </div>
+                            <span className="hr_lines">
+                                <hr />
+                            </span>
+
                         </div>
                     </div>
-                    <div className='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12'>
-                        <img  className='menshero' src={menshero} />
+                    <div className='aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12'>
+                        <img className='desktop_view_hero menshero' src={menshero} />
                     </div>
                 </div>
+
+
+
+
+                <div className="aem-Grid aem-Grid--12 legging-flex mobile_view">
+
+                    <div className='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12'>
+                        <img className='menshero' src={menshero} />
+                    </div>
+
+                    <div className='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12'>
+                        <div className='section3'>
+                            <h2>Take off in the new <br />Signature Legging</h2>
+                            <h4>Lorem Ipsum Dolor Tempor</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor labore dolore magna lorem ipsum dolor sit dolore magna.</p>
+                            <div className='btn-flex'>
+                                <button className='custom-button'>SHOP COLLECTION</button>
+                                <button>SHOP NOW</button>
+
+                            </div>
+                            <span className="hr_lines">
+                                <hr />
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <div className="hero_banner ">
                     <div className="aem-Grid aem-Grid--12 flex">
                         <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-                            <div className="card-img"><img  src={bottombanner} className="card-img-top1" alt="" /></div>
+                            <div className="card-img"><img src={bottombanner} className="card-img-top1" alt="" /></div>
                         </div>
                         <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
                             <div className="mobile_card">
@@ -146,8 +178,8 @@ export default function Home({ name, title }) {
                                     <button className='custom-button1'>SHOP DEVICES</button>
                                     <div className="hr_line">
                                         <img src={map} />
-                 <div className='line'></div>
-                </div>
+                                        <div className='line'></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

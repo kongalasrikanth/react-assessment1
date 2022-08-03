@@ -34,7 +34,7 @@ const Navbardesc = ({ setCategory, selectedCategory, ...props }) => {
                             <h1><NavLink to="/">VENIA</NavLink></h1>
 
                         </div>
-                        <NavLink to="/login" className="searchicicon"> < FiSearch /></NavLink>&nbsp;&nbsp;&nbsp;
+                        
                         <NavLink to="/" className="searchicicon" >< FiShoppingBag /></NavLink>
                         <NavLink to="/cart" className="cart">
                             {' '}

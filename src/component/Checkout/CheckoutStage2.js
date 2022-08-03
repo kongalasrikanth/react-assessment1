@@ -44,7 +44,7 @@ export default function Guestcheckout() {
               <label for="html">Express Delivery (2-5 business days via USPS) $17.95</label><br />
               <input type="radio" id="html" value="HTML" />
               <label for="html">Next Day Delivery (Next business days via FedEx) $53.61</label><br />
-              <button className='main-btn'><p>CONTINUE TO PAYMENT</p></button>
+              <button className='main-btn'><p><a href="/Checkout3">CONTINUE TO PAYMENT</a></p></button>
               <p>3. Payment Information</p>
             </div></div>
 

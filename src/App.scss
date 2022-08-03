@@ -203,7 +203,7 @@
 .pricing-card {
   margin-left: 185px;
   border: 1px solid #D1D3D6;
-  padding: 10px;
+  padding: 0px 18px;
 
 }
 
@@ -211,7 +211,7 @@
   margin-left: 185px;
   border: 1px solid #D1D3D6;
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 0px 18px;
 
   h5 {
 
@@ -222,14 +222,17 @@
     color: #1f39ff;
     padding: 5px;
     margin-left: 10px;
-    border: 1px solid #1f39ff;
+    border: 1px solid #1f39ff !important;
+    background: #fff !important;
     width: 100px;
     height: 30px;
+
   }
 
   .signin-btn p {
     font-size: 10px;
     color: #1f39ff;
+
   }
 }
 
@@ -241,13 +244,14 @@
   text-align: center;
   margin-left: 200px;
   height: 40px;
-  border: 2px solid #D4703D;
+  border: 1px solid #1f39ff !important;
+  background: #fff !important;
 }
 
 .btn-shipping-1 p {
   font-size: 10px;
   color: #1f39ff;
-  padding: 10px;
+  background-color: #fff !important;
 }
 
 .main-text {
@@ -341,7 +345,6 @@
 }
 
 label {
-  padding-left: 10px;
   padding-top: 10px;
 }
 
@@ -553,7 +556,8 @@ $blue: #172026;
 }
 
 .guesth5 {
-  font: normal normal 600 16px/20px Muli;
+  font: normal normal 500 16px/20px Muli;
+  font-family: 'Muli' !important;
   padding-left: 20px;
   padding-top: 20px;
 }
@@ -816,7 +820,9 @@ $navclr: white;
 }
 
 .navbar-nav a {
-  color: #000;
+  color: #fff;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 14px;
 }
 
 .navbar-nav {
@@ -958,17 +964,19 @@ body {
   transform-origin: 0% 100%;
   transition: transform 0.4s ease-in-out;
 }
-.navbar{
+
+.navbar {
   background-color: #1363DF !important;
 }
+
 .navbar .menubar {
   padding-top: 120px;
   height: 97vh;
   width: 197%;
   transform: translate(-150%);
   display: flex;
-  z-index: 2;
-    position: inherit !important;
+  z-index: 1;
+  position: inherit !important;
   flex-direction: column;
   margin-left: -40px;
   padding-left: 50px;
@@ -985,24 +993,21 @@ body {
 
 .logo {
   position: absolute;
-  top: 10px;
-  left: -57px;
   font-size: 1.2rem;
   color: #0e2431;
-  padding: 0px 7.5rem;
+  padding: 3px 7.5rem;
   display: flex;
 }
 
 .searchicicon {
   position: relative;
-  left: 108px;
-  bottom: -6px;
+  left: 53px;
+  bottom: -13px;
 }
 
 .veniaicon {
   position: relative;
-  top: 2px;
-  left: 60px;
+  top: 12px;
 }
 
 .nav-container input[type="checkbox"]:checked~.menubar {
@@ -1318,7 +1323,8 @@ $blackcolor: #172026;
 .main-btn {
   margin: 38px 272px;
   width: 180px;
-  border: 1px solid #1f39ff;
+  border: 1px solid #1f39ff !important;
+  background: #fff !important;
   padding: 8px;
 }
 
@@ -1533,4 +1539,59 @@ a {
   padding: 2px 5px;
   vertical-align: top;
   margin-left: -10px;
+}
+
+
+
+.iconDetails {
+  margin: 0 2%;
+  float: left;
+  height: 120px;
+  width: 100px;
+}
+
+.order {
+  width: 100%;
+  height: auto;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .text {
+    float: left;
+
+    h4 {
+      width: 100%;
+      float: left;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+.card-success{
+  width: 440px;
+    height: 351px;
+    background-color: #47B5FF;
+    display: flex;
+    align-items: center;
+    vertical-align: middle !important;
+    flex-direction: column;
+    justify-content: center;
+    gap:55px;
+    padding: 70px;
+h3{
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+}
+.social-media-icons{
+  display: flex;
+    gap: 34px;
+}
 }

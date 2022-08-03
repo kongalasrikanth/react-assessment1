@@ -89,10 +89,9 @@ export default function Basket(props) {
               <div className="first_button">
                 <div>
                   <button
-                    onClick={() => alert("Implement Checkout!")}
                     className="check"
                   >
-                    <FiLock size={18} />&nbsp;&nbsp;CHECKOUT
+                    <FiLock size={18} />&nbsp;&nbsp;<a href="/Checkout1">CHECKOUT</a>
                   </button>
                 </div>
                 <div>
