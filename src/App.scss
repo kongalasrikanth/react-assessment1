@@ -426,6 +426,7 @@ $blue: #172026;
 
 .foot-1 {
   padding-top: 1rem;
+  font-family: "muli";
 }
 
 .foot_left {
@@ -452,6 +453,7 @@ $blue: #172026;
 .footer_about h6,
 .foot_ac h6 {
   color: $blue;
+  font-weight: bold;
 }
 
 .foot_right {
@@ -893,6 +895,19 @@ body {
   align-items: center;
   height: 62px;
 }
+.nav-link{
+  font-family:"muli";
+  font-size:16px;
+   
+}
+
+.navbar-nav a 
+{
+
+  text-decoration:none !important;
+  color:white !important;
+}
+
 
 .navbar .menubar {
   display: flex;
