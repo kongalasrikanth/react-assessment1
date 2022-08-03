@@ -816,13 +816,14 @@ $navclr: white;
 .cart {
   text-decoration: $login;
   color: $navclr;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 .navbar-nav a {
   color: #fff;
     border-bottom: 3px solid #fff;
     padding-bottom: 14px;
+    font-family: muli;
 }
 
 .navbar-nav {
@@ -1595,3 +1596,9 @@ h3{
     gap: 34px;
 }
 }
+.react-slideshow-container .default-nav {
+  content: '' !important;
+  fill: darkgray !important;
+  margin-left: 36px !important;
+  margin-right: 36px !important;
+  }

@@ -34,7 +34,7 @@ export default function Home({ name, title }) {
                                             <div className='slider-div' >
                                                 <h3>Shop the new <br />Signature Collection</h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis aliquam faucibus purus.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br/> tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis<br/> aliquam faucibus purus.
                                                 </p><br />
                                                 <button>SHOP NOW</button>
                                             </div>
@@ -115,11 +115,11 @@ export default function Home({ name, title }) {
 
                 </div>
                 <div className="aem-Grid aem-Grid--12 legging-flex desktop_view">
-                    <div className='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12'>
+                    <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12'>
                         <div className='section3'>
                             <h2>Take off in the new <br />Signature Legging</h2>
                             <h4>Lorem Ipsum Dolor Tempor</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor labore dolore magna lorem ipsum dolor sit dolore magna.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor labore dolore magna lorem ipsum dolor sit dolore magna.</p>
                             <div className='btn-flex'>
                                 <button className='custom-button'>SHOP COLLECTION</button>
                                 <button>SHOP NOW</button>
@@ -177,7 +177,7 @@ export default function Home({ name, title }) {
                                     <h6 className="card-h6">Lorem Ipsum Dolor Tempor</h6><br />
                                     <button className='custom-button1'>SHOP DEVICES</button>
                                     <div className="hr_line">
-                                        <img src={map} />
+                                        <img width={20} src={map} />
                                         <div className='line'></div>
                                     </div>
                                 </div>
