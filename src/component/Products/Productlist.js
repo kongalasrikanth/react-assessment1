@@ -72,15 +72,34 @@ const Productlist = ({ category }) => {
                     return (
                         <>
                             <div className="col-md-4 col-sm-6 col-6">
-                                <div className="card" key={product.id}>
+                                 <div className="card" key={product.id}>
                                     < NavLink to={`/products/${product.id}`}>
-                                        <img src={product.image} className="card-img_top" alt={product.title} width="300px"height="500px" /></NavLink>
+                                        <img src={product.image} className="card-img_top" alt={product.title} width="300px" height="500px" /></NavLink>
                                     <div className="card-footer">
                                         <h5 className="card-title mb-0">{product.title.substring(0, 18)}</h5>
                                         <p className="card-text lead fw-bold">${product.price}</p>
                                         <img src={heart} />
                                     </div>
-                                </div>
+                                </div> 
+
+
+
+                                {/* <div className="product-card" key={product.id}>
+                                < NavLink to={`/products/${product.id}`}>
+                                    <div className="product-tumb">
+                                        <img src={product.image} alt={product.title} />
+                                    </div>
+                                    <div className="product-details">
+                                        <h4><a href="">{product.title.substring(0, 18)}</a></h4>
+                                        <div className="product-bottom-details">
+                                            <div className="product-price">${product.price}</div>
+                                            <div className="product-links">
+                                                <a href=""><i className="fa fa-heart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </NavLink>
+                                </div> */}
                             </div>
                         </>
                     )
@@ -90,7 +109,7 @@ const Productlist = ({ category }) => {
                         &nbsp;
                     </div>
                     <div className="aem-GridColumn aem-GridColumn--default--2 paginationone">
-                      
+
                     </div>
                     <div className="aem-GridColumn aem-GridColumn--default--5">
                         &nbsp;

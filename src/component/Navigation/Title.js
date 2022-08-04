@@ -1,5 +1,5 @@
 import React from 'react'
-import menshero from '../../Images/hero.jpeg'
+import menshero from '../../Images/hero.jpg'
 
 function Title() {
   return (

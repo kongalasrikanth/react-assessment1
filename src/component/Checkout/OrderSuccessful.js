@@ -55,11 +55,11 @@ export default function Review() {
             <div className="aem-Grid aem-Grid--12">
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
 
-                    <div class='order'>
-                        <img src='https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg' class='iconDetails' />
+                    <div className='order'>
+                        <img src='https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg' className='iconDetails' />
 
-                        <div class="text">
-                            <h4>Electric Leggings</h4>
+                        <div className="text">
+                            <h4>Mens Products</h4>
                             <p>Size: Medium</p>
                             <p>Color: Storm</p>
                             <p>Quantity: 2</p>
@@ -67,11 +67,11 @@ export default function Review() {
                     </div>
                 </div >
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                <div class='order'>
-                        <img src='https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg' class='iconDetails' />
+                <div className='order'>
+                        <img src='https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg' className='iconDetails' />
 
-                        <div class="text">
-                            <h4>Electric Leggings</h4>
+                        <div className="text">
+                            <h4>Womens Products</h4>
                             <p>Size: Medium</p>
                             <p>Color: Storm</p>
                             <p>Quantity: 2</p>

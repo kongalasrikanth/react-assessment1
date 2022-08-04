@@ -2,36 +2,36 @@ body {
 	font-family: "Source Serif Pro" !important;
 }
 
-.Nav {
-	ul {
-		display: flex;
-		list-style-type: none;
-		gap: 25px;
-	}
+// .Nav {
+// 	ul {
+// 		display: flex;
+// 		list-style-type: none;
+// 		gap: 25px;
+// 	}
 
-	a {
-		text-decoration: none;
-		color: black;
-	}
-}
+// 	a {
+// 		text-decoration: none;
+// 		color: black;
+// 	}
+// }
 
-.navSearch {
-	ul {
-		display: flex;
-		list-style-type: none;
-		gap: 25px;
-	}
+// .navSearch {
+// 	ul {
+// 		display: flex;
+// 		list-style-type: none;
+// 		gap: 25px;
+// 	}
 
-	a {
-		text-decoration: none;
-		color: black;
-	}
+// 	a {
+// 		text-decoration: none;
+// 		color: black;
+// 	}
 
-	img {
-		width: 24px;
-		height: 25px;
-	}
-}
+// 	img {
+// 		width: 24px;
+// 		height: 25px;
+// 	}
+// }
 
 .text-title {
 	letter-spacing: 0.3rem;
@@ -408,10 +408,10 @@ p {
 	// box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 
-.navbar {
-	// position: fixed !important;
-	z-index: 5 !important;
-}
+// .navbar {
+// 	// position: fixed !important;
+// 	z-index: 5 !important;
+// }
 
 .payPal {
 	width: 85%;
@@ -678,12 +678,12 @@ input[type="checkbox"] {
 	}
 }
 
-.nav__toggle {
-	position: absolute;
-	cursor: pointer;
-	margin: 0rem 1rem;
-	right: 0;
-}
+// .nav__toggle {
+// 	position: absolute;
+// 	cursor: pointer;
+// 	margin: 0rem 1rem;
+// 	right: 0;
+// }
 
 //   .close,
 //   input[type="checkbox"] {
@@ -693,34 +693,34 @@ input[type="checkbox"] {
 	margin-top: 0.2rem;
 }
 
-.nav__menu {
-	display: flex;
-	flex-direction: column;
-	gap: 1.5rem;
-	align-items: center;
-	margin: 1rem;
-}
+// .nav__menu {
+// 	display: flex;
+// 	flex-direction: column;
+// 	gap: 1.5rem;
+// 	align-items: center;
+// 	margin: 1rem;
+// }
 
-.nav__menu li {
-	list-style: none;
-	display: none;
-}
+// .nav__menu li {
+// 	list-style: none;
+// 	display: none;
+// }
 
-.nav {
-	justify-content: space-around !important;
-}
+// .nav {
+// 	justify-content: space-around !important;
+// }
 
-.logo {
-	// font-size: 24px;
-	letter-spacing: 6px;
-	// line-height: 61px;
-}
+// .logo {
+// 	// font-size: 24px;
+// 	letter-spacing: 6px;
+// 	// line-height: 61px;
+// }
 
-.logo a {
-	color: #fff !important;
-	font-family: "Righteous", cursive;
-	text-decoration: none !important;
-}
+// .logo a {
+// 	color: #fff !important;
+// 	font-family: "Righteous", cursive;
+// 	text-decoration: none !important;
+// }
 
 .vletter {
 	display: inline-block;
@@ -732,41 +732,42 @@ input[type="checkbox"] {
 	-webkit-text-fill-color: transparent;
 }
 
-.nav__menu a {
-	text-decoration: none;
-	color: #fff !important;
-	color: initial;
-	font-size: 14px;
-}
+// .nav__menu a {
+// 	text-decoration: none;
+// 	color: #fff !important;
+// 	color: initial;
+// 	font-size: 14px;
+// }
 
-#nav__checkbox:checked~ul.nav__menu li {
-	display: block;
-}
+// #nav__checkbox:checked~ul.nav__menu li {
+// 	display: block;
+// }
 
-#nav__checkbox:checked~label.nav__toggle .hamburger {
-	display: none;
-}
+// #nav__checkbox:checked~label.nav__toggle .hamburger {
+// 	display: none;
+// }
 
-#nav__checkbox:checked~label.nav__toggle .close {
-	display: block;
-}
+// #nav__checkbox:checked~label.nav__toggle .close {
+// 	display: block;
+// }
 
-@media only screen and (min-width: 768px) {
-	.nav__toggle {
-		display: none;
-	}
+// @media only screen and (min-width: 768px) {
+// 	.nav__toggle {
+// 		display: none;
+// 	}
 
-	.nav__menu {
-		flex-direction: row;
-	}
+// 	.nav__menu {
+// 		flex-direction: row;
+// 	}
 
-	.nav__menu li {
-		display: block;
-	}
-}
+// 	.nav__menu li {
+// 		display: block;
+// 	}
+// }
 
 .hero_banner {
-	padding-bottom: 12px;
+	padding-bottom: 0px;
+	padding-top: 30px;
 }
 
 .hero_banner .card-body {
@@ -814,7 +815,7 @@ input[type="checkbox"] {
 .hr_line{
 	display: flex;
     position: relative;
-    right: 251px;
+    right: 225px;
     gap: 10px;
     align-items: center;
     flex-direction: column;
@@ -873,22 +874,29 @@ input[type="checkbox"] {
 	}
   }
 @media only screen and (min-width: 320px) and (max-width: 765px) {
-	.mobile_card {
-		margin-top: -35px;
-		margin-left: 20px;
-		margin-right: 20px;
-		margin-bottom: 2px;
+	.section3 h2 {
+		font-size: 36px !important;
+	}
+	.section3{
+		padding: 20px !important;
+	}
+	.hr_lines{
+		display: table;
+		margin: 0 auto;
 	}
 	.card-body1{
-		right: 19px !important;
+		right: 0px !important;
+    padding: 0px !important;
+    text-align: center;
+
 		h5{
 			font-size: 36px !important;
 		}
 	}
-	.card-img-top1{
-		width: 375px !important;
-		height: auto !important;
-	}
+	// .card-img-top1{
+	// 	width: 375px !important;
+	// 	height: auto !important;
+	// }
 	.menshero{
 		width: auto !important;
 		height: auto !important;
@@ -926,7 +934,7 @@ input[type="checkbox"] {
 	}
 	.hr_line{
 		right: 0px;
-    bottom: 360px;
+    bottom: 320px;
 	}
 	.mobile_hero_banner {
 		display: block !important;
@@ -936,9 +944,9 @@ input[type="checkbox"] {
 	// 	display: none !important;
 	// }
 
-	.nav {
-		justify-content: left !important;
-	}
+	// .nav {
+	// 	justify-content: left !important;
+	// }
 
 	.mobile_hero_banner .card-body {
 		height: 11rem;
@@ -971,10 +979,10 @@ input[type="checkbox"] {
 	justify-content: space-around;
 }
 
-.nav__menu li:last-child {
-	margin-right: auto;
-	display: block;
-}
+// .nav__menu li:last-child {
+// 	margin-right: auto;
+// 	display: block;
+// }
 
 .cheked {
 	display: table-cell !important;
@@ -1031,9 +1039,12 @@ input[type="checkbox"] {
 
 .card-footer1 {
 	padding: 1rem 1.25rem;
-	background-color: #1c1b1b;
+	background-color:  #1c1b1bcc;
+	
 	border-bottom: 8px solid blue;
 	color: #fff;
+	position: relative;
+    bottom: 54px;
 	h5{
 		font-size: 24px;
 	}
@@ -1055,9 +1066,11 @@ input[type="checkbox"] {
 	h5 {
 		color: white;
 		font-size: 48px;
+		font-family: 'Source Serif Pro';
 	}
 	h6{
 		font-size: 20px;
+		font-family: 'muli';
 	}
 }
 
@@ -1075,16 +1088,19 @@ input[type="checkbox"] {
 .section3 {
 	display: revert;
     vertical-align: middle;
-    padding: 44px 90px;
+    padding: 14px 70px;
 	h2 {
 		font-size: 48px;
 		font-weight: bold;
+		font-family: 'Source Serif Pro';
 	}
 	h4{
 		font-size: 20px;
+		font-family: 'muli';
 	}
 	p{
 		font-size: 16px;
+		font-family: 'muli';
 	}
 }
 
@@ -1096,16 +1112,16 @@ input[type="checkbox"] {
 
 .menshero {
 	width: 476px;
-    height: 400px;
+    height: 370px;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-	color: #fff !important;
-	font-weight: 400 !important;
-}
-.react-slideshow-container .default-nav{
-	background: none !important;
-}
+// .navbar-dark .navbar-nav .nav-link {
+// 	color: #fff !important;
+// 	font-weight: 400 !important;
+// }
+// .react-slideshow-container .default-nav{
+// 	background: none !important;
+// }
 .line{
 	width:80px;
 	height: 5px;

@@ -102,11 +102,11 @@ export default function Basket(props) {
           )}
         </div>
       </div>
-      {/* <div className="aem-Grid aem-Grid--12">
+      <div className="aem-Grid aem-Grid--12">
         <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12 accordianone">
           <Accordian />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }

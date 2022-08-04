@@ -3,7 +3,7 @@ import edit from '../../Images/edit-2.jpg';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-export default function Review() {
+export default function checkout4() {
   return (
     <div className='container'>
       <div className='container-Checkout'>
@@ -55,6 +55,29 @@ export default function Review() {
               </div>
             </div>
           </div>
+          <div>
+          <div className='guest-2'>
+              <div className="aem-Grid aem-Grid--12">
+
+                <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
+                  <h5 className='guesth5'>Payment Information</h5>
+                  <p className='guest1'>Credit Card <br /> Visa ending in 4567</p>
+                </div>
+                <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
+
+                  <div className='guestp'>
+                    {/* <p>Qadim Farhan </p>
+                    <p> 1098 Wapello Street </p>
+                    <p>Altadena, California 91001 </p>
+                    <p>United States</p> */}
+                  </div>
+                </div>
+                <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
+                  <p className='guest3'><img alt="Venia_alt" src={edit} />Edit</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12">
           <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12"></div>
@@ -81,38 +104,41 @@ export default function Review() {
         </div>
       </div>
       <div className='pay1'>
-        <p>3. Payment Information</p>
-      </div>
-      <input type="radio" id="html" value="HTML" />
-      <label for="html">Credit Card</label><br />
-      <div className="aem-Grid aem-Grid--12">
-        <div className="aem-GridColumn aem-GridColumn--default--4">
-          <Row className="mb-3">
-            <Form.Group as={Col} controlId="formGridEmail">
-              <Form.Label>Name on Card</Form.Label>
-              <Form.Control type="email" />
-            </Form.Group>
-          </Row>
-          <Row className="mb-3">
-            <Form.Group as={Col} controlId="formGridEmail">
-              <Form.Label>Credit Card Number</Form.Label>
-              <Form.Control type="email" />
-            </Form.Group>
-          </Row>
-          <Row className="mb-3">
-            <Form.Group as={Col} controlId="formGridCity">
-              <Form.Label>Expiration Date</Form.Label>
-              <Form.Control />
-            </Form.Group>
+                <p>3. items in your order</p>
+            </div>
+            <div className="aem-Grid aem-Grid--12">
+                <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
 
-            <Form.Group as={Col} controlId="formGridState">
-              <Form.Label>CVV</Form.Label>
-              <Form.Control />
-            </Form.Group>
-          </Row>
-        </div >
-      </div>
-      <button className='main-btn'><p><a href="/Checkout4">CONTINUE TO REVIEW ORDER</a></p></button>
+                    <div className='order'>
+                        <img src='https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg' className='iconDetails' />
+
+                        <div className="text">
+                            <h4>Mens Products</h4>
+                            <p>Size: Medium</p>
+                            <p>Color: Storm</p>
+                            <p>Quantity: 2</p>
+                        </div>
+                    </div>
+                </div >
+                <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
+                <div className='order'>
+                        <img src='https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg' className='iconDetails' />
+
+                        <div className="text">
+                            <h4>Womens Products</h4>
+                            <p>Size: Medium</p>
+                            <p>Color: Storm</p>
+                            <p>Quantity: 2</p>
+                        </div>
+                    </div>
+                </div >
+                <div className="aem-GridColumn aem-GridColumn--default--8">
+                    <p>You will also receive an email with the details and we will let you know when your order has shipped.</p>
+               <br/>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. For assistance call Support at 1-800-867-5309, M - F, 9am - 8pm EST.</p>
+                </div>
+            </div>
+      <button className='main-btn review_btn'><p><a href="/OrderSuccessful">PLACE ORDER</a></p></button>
     </div>
   )
 }

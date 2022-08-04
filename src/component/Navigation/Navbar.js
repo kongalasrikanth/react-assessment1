@@ -1,9 +1,13 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import '../../Style/Navbar.scss';
 import logo from './../../Images/logo.jpeg';
 import { FiSearch, FiShoppingBag, FiUser } from "react-icons/fi";
 
 const categories = [
+    {
+        displayName: 'Home',
+    },
     {
         filter: "women's clothing",
         displayName: 'Women'
@@ -22,8 +26,8 @@ const categories = [
 const Navbar = ({ setCategory, selectedCategory, ...props }) => {
     return (
         <React.Fragment>
-            <div className='navfirst' >
-                <nav className="navbar navbar-expand-sm bg-#1f39ff navbar-dark py-3 shadow-sm">
+            <div  >
+                {/* <nav className="navbar navbar-expand-sm bg-#1f39ff navbar-dark py-3 shadow-sm">
                     <div className="container">
                         <NavLink className="navbar-brand" to="/"><img width={100} src={logo} /></NavLink>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,13 +46,10 @@ const Navbar = ({ setCategory, selectedCategory, ...props }) => {
                                 }
                             </ul>
                             <div className="buttons">
-
-                                {/* <NavLink to="/" className="login"> < FiSearch />Search</NavLink>
-                                <NavLink to="/" className="signin" ><FiUser />Signin</NavLink> */}
                                 <NavLink to="/cart" className="cart"> <FiShoppingBag />
                                     {' '}
                                     {props.countCartItems ? (
-                                        <span class='badge badge-warning' id='lblCartCount'> {props.countCartItems} </span>
+                                        <span className='badge badge-warning' id='lblCartCount'> {props.countCartItems} </span>
                                     ) : (
                                         ''
                                     )}
@@ -56,7 +57,44 @@ const Navbar = ({ setCategory, selectedCategory, ...props }) => {
                             </div>
                         </div>
                     </div>
+                </nav> */}
+
+
+
+                <nav className="navbar">
+                    <div className="navbar-container container">
+                        <input type="checkbox" name="" id="" />
+                        <div className="hamburger-lines">
+                            <span className="line line1"></span>
+                            <span className="line line2"></span>
+                            <span className="line line3"></span>
+                        </div>
+                        <NavLink className="logo" to="/"> <img width={100} src={logo} /></NavLink>
+                        <ul className="menu-items">
+                            {/* <li><a href="#">Home</a></li> */}
+                            {
+                                categories?.map((category, i) =>
+
+                                    <li key={i} className={`nav-link ${category.filter === selectedCategory ? 'active' : ''} `} aria-current="page" onClick={() => setCategory(category.filter)}>{category.displayName}
+                                    </li>
+
+                                )
+                            }
+                        </ul>
+                        <NavLink to="/cart" className="cart"> <FiShoppingBag />
+                                    {' '}
+                                    {props.countCartItems ? (
+                                        <span className='badge badge-warning' id='lblCartCount'> {props.countCartItems} </span>
+                                    ) : (
+                                        ''
+                                    )}
+                                </NavLink>{' '}
+                       
+                    </div>
                 </nav>
+
+
+
             </div>
 
         </React.Fragment>

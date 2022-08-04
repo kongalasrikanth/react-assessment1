@@ -13,11 +13,12 @@ import Footer from './component/Navigation/Footer';
 // import Signin from './component/Auth/';
 // import Signout from './component/Auth/';
 // import Signup from "./component/Checkout/Create";
-import Navbardesc from './component/Navigation/Navbardesc';
+// import Navbardesc from './component/Navigation/Navbardesc';
 import Shipping from './component/Checkout/Shipping';
 import Home from './component/Navigation/Home';
 import Checkout from './component/Checkout/CheckoutStage1';
 import Guestcheckout from './component/Checkout/CheckoutStage2';
+import Checkout4 from './component/Checkout/CheckoutStage4';
 import OrderSuccess from './component/Checkout/OrderSuccessful';
 
 function App() {
@@ -54,7 +55,7 @@ function App() {
 
 
       <Navbar countCartItems={cartItems.length} setCategory={setCategory} selectedCategory={category} />
-      <Navbardesc countCartItems={cartItems.length} setCategory={setCategory} selectedCategory={category} />
+      {/* <Navbardesc countCartItems={cartItems.length} setCategory={setCategory} selectedCategory={category} /> */}
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/Mens' element={<Header category={category} />} />
@@ -64,6 +65,7 @@ function App() {
         {/* <Route exact path='/' element={<Signin />} /> */}
         <Route exact path='/Checkout2' element={<Guestcheckout />} />
         <Route exact path='/Checkout3' element={<Review />} />
+        <Route exact path='/Checkout4' element={<Checkout4 />} />
         <Route exact path='/Checkout1' element={<Checkout />} />
         <Route exact path='/OrderSuccessful' element={<OrderSuccess />} />
         {/* <Route exact path='/signup' element={<Signup />} />

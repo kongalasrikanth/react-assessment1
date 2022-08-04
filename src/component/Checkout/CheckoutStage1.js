@@ -106,9 +106,9 @@ export default function Checkout() {
           </Form>
         </div>
         <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12">
-          <div className='signin-check'>
+          <div className='signin-check cartdetails'>
             <div className="aem-Grid aem-Grid--12">
-              <div className="aem-GridColumn aem-GridColumn--default--6 ">
+              <div className="aem-GridColumn aem-GridColumn--default--6">
                 <h5>Sign in for Express <br />Checkout</h5>
               </div>
               <div className="aem-GridColumn aem-GridColumn--default--6 ">
@@ -116,7 +116,7 @@ export default function Checkout() {
               </div>
             </div>
           </div>
-          <div className='pricing-card' >
+          <div className='pricing-card cartdetails' >
             <div className="aem-Grid aem-Grid--12">
               <div className="aem-GridColumn aem-GridColumn--default--6 ">
                 <h6>Subtotal</h6>

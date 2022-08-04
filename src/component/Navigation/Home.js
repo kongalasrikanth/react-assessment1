@@ -1,32 +1,38 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
+import { NavLink } from 'react-router-dom';
 import menshero from '../../Images/legging.png';
 import map from '../../Images/map-pin.svg';
-import bottombanner from '../../Images/adventure.png';
+import bottombanner from '../../Images/adventure.jpg';
 import { Link } from 'react-router-dom';
 import '../../Style/Home.scss';
 import 'react-slideshow-image/dist/styles.css';
 
 export default function Home({ name, title }) {
-    const slideImages = [
-        {
-            url: 'https://i.ibb.co/vJ4VZcr/slider.jpg',
-        },
-        {
-            url: 'https://i.ibb.co/vJ4VZcr/slider.jpg',
+    // const slideImages = [
+    //     {
+    //         url: 'https://i.ibb.co/rmWMYvk/Carousel-image.jpg',
+    //     },
+    //     {
+    //         url: 'https://i.ibb.co/rmWMYvk/Carousel-image.jpg',
 
-        },
-        {
-            url: 'https://i.ibb.co/vJ4VZcr/slider.jpg',
-        },
-    ];
+    //     },
+    //     {
+    //         url: 'https://i.ibb.co/rmWMYvk/Carousel-image.jpg',
+    //     },
+    // ];
 
+
+    const properties = {
+        prevArrow: <span className='buttonStyleleft' ></span>,
+        nextArrow: <span className='buttonStyleright'></span>
+    }
     return (
         <React.Fragment>
             <div>
                 <div className="aem-Grid  aem-Grid--12">
                     <div className='aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12'>
-                        <Slide>
+                        {/* <Slide {...properties}>
                             {slideImages.map((slideImage, index) => (
                                 <div className="each-slide" key={index}>
                                     <div className="aem-Grid  aem-Grid--12">
@@ -34,7 +40,7 @@ export default function Home({ name, title }) {
                                             <div className='slider-div' >
                                                 <h3>Shop the new <br />Signature Collection</h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br/> tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis<br/> aliquam faucibus purus.
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br /> tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis<br /> aliquam faucibus purus.
                                                 </p><br />
                                                 <button>SHOP NOW</button>
                                             </div>
@@ -48,6 +54,36 @@ export default function Home({ name, title }) {
                                     </div>
                                 </div>
                             ))}
+                        </Slide> */}
+
+
+
+
+                        <Slide {...properties} slidesToScroll={1} slidesToShow={1} indicators={true} autoplay={false} responsive={[{
+                            breakpoint: 800,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 2
+                            }
+                        }, {
+                            breakpoint: 500,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                            }
+                        }]}>
+                            <div className='slider-1'>
+                                <h3>Shop the new <br />Signature Collection</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis aliquam faucibus purus.
+                                </p><br />
+                                <button>SHOP NOW</button>
+                            </div>
+                            <div style={{
+                                width: "674px",
+                                height: "445px"
+                            }}><img width="100%" src="https://i.ibb.co/rmWMYvk/Carousel-image.jpg" /></div>
+
                         </Slide>
                     </div>
                 </div>
@@ -115,7 +151,7 @@ export default function Home({ name, title }) {
 
                 </div>
                 <div className="aem-Grid aem-Grid--12 legging-flex desktop_view">
-                    <div className='aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12'>
+                    <div className='aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12'>
                         <div className='section3'>
                             <h2>Take off in the new <br />Signature Legging</h2>
                             <h4>Lorem Ipsum Dolor Tempor</h4>
@@ -171,15 +207,13 @@ export default function Home({ name, title }) {
                             <div className="card-img"><img src={bottombanner} className="card-img-top1" alt="" /></div>
                         </div>
                         <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                            <div className="mobile_card">
-                                <div className="card-body1">
-                                    <h5 className="card-title1">Conquer your<br /> next adventure</h5>
-                                    <h6 className="card-h6">Lorem Ipsum Dolor Tempor</h6><br />
-                                    <button className='custom-button1'>SHOP DEVICES</button>
-                                    <div className="hr_line">
-                                        <img width={20} src={map} />
-                                        <div className='line'></div>
-                                    </div>
+                            <div className="card-body1">
+                                <h5 className="card-title1">Conquer your<br /> next adventure</h5>
+                                <h6 className="card-h6">Lorem Ipsum Dolor Tempor</h6><br />
+                                <button className='custom-button1'>SHOP DEVICES</button>
+                                <div className="hr_line">
+                                    <img width={20} src={map} />
+                                    <div className='line'></div>
                                 </div>
                             </div>
                         </div>
