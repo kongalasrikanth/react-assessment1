@@ -4,14 +4,14 @@ import { RiPencilLine } from 'react-icons/ri';
 import { FiLock, FiTrash2 } from 'react-icons/fi';
 import Accordian from '../Products/Accordian';
 import paypal from '../../Images/paypall-button.png';
-export default function Basket(props) {
+export default function Chekout(props) {
   const { cartItems, onAdd, onRemove } = props;
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
   const taxPrice = itemsPrice * 0.14;
   const shippingPrice = itemsPrice > 2000 ? 0 : 20;
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
   return (
-    <div className="container basket">
+    <div className="container products">
       <h2>Your Shopping Bag</h2>
       <hr />
       <div className="aem-Grid aem-Grid--12">

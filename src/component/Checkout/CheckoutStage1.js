@@ -21,18 +21,21 @@ export default function Checkout() {
           </div>
           <Form>
             <Row className="mb-3">
-              <Form.Group as={Col} controlId="formGridEmail">
+              <div className="aem-Grid aem-Grid--12">
+              <Form.Group className="aem-GridColumn aem-GridColumn--default--5 mr-5 aem-GridColumn--phone--12" controlId="formGridEmail">
                 <Form.Label>Email</Form.Label>
                 <Form.Control type="email" placeholder="abc@xyz.com" />
               </Form.Group>
 
-              <Form.Group as={Col} controlId="formGridPassword">
+              <Form.Group className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12" controlId="formGridPassword">
                 <Form.Label>Phone Number</Form.Label>
                 <Form.Control type="password" placeholder="(222) 222-2222" />
               </Form.Group>
+              </div>
             </Row>
             <Row className="mb-4">
-              <Form.Group as={Col} controlId="formGridState">
+              <h2>1. Shipping Information</h2>
+              <Form.Group className="aem-GridColumn aem-GridColumn--default--12 mr-5 aem-GridColumn--phone--12" controlId="formGridState">
                 <Form.Label>State</Form.Label>
                 <Form.Select defaultValue="Choose...">
                   <option>Choose...</option>
@@ -41,38 +44,43 @@ export default function Checkout() {
               </Form.Group>
             </Row>
             <Row className="mb-3">
-              <Form.Group as={Col} controlId="formGridEmail">
+            <div className="aem-Grid aem-Grid--12">
+              <Form.Group className="aem-GridColumn aem-GridColumn--default--5 mr-5 aem-GridColumn--phone--12" controlId="formGridEmail">
                 <Form.Label>First Name</Form.Label>
                 <Form.Control type="email" />
               </Form.Group>
 
-              <Form.Group as={Col} controlId="formGridPassword">
+              <Form.Group className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12" controlId="formGridPassword">
                 <Form.Label>Last Name</Form.Label>
                 <Form.Control type="password" />
               </Form.Group>
+              </div>
             </Row>
             <Row className="mb-3">
-              <Form.Group as={Col} controlId="formGridEmail">
+              <div className="aem-Grid aem-Grid--12">
+              <Form.Group className="aem-GridColumn aem-GridColumn--default--5 mr-5 aem-GridColumn--phone--12" controlId="formGridEmail">
                 <Form.Label>Street Address</Form.Label>
                 <Form.Control type="email" />
               </Form.Group>
 
-              <Form.Group as={Col} controlId="formGridPassword">
+              <Form.Group className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12" controlId="formGridPassword">
                 <Form.Label>Street Address 2</Form.Label>
                 <Form.Control type="password" />
               </Form.Group>
+              </div>
             </Row>
 
 
 
 
             <Row className="mb-3">
-              <Form.Group as={Col} controlId="formGridCity">
+            <div className="aem-Grid aem-Grid--12">
+              <Form.Group className="aem-GridColumn aem-GridColumn--default--5 mr-5 aem-GridColumn--phone--12" controlId="formGridCity">
                 <Form.Label>City</Form.Label>
                 <Form.Control />
               </Form.Group>
 
-              <Form.Group as={Col} controlId="formGridState">
+              <Form.Group className="aem-GridColumn aem-GridColumn--default--3 mr-5 aem-GridColumn--phone--12" controlId="formGridState">
                 <Form.Label>State</Form.Label>
                 <Form.Select defaultValue="Choose...">
                   <option>California</option>
@@ -80,18 +88,19 @@ export default function Checkout() {
                 </Form.Select>
               </Form.Group>
 
-              <Form.Group as={Col} controlId="formGridZip">
+              <Form.Group className="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--12" controlId="formGridZip">
                 <Form.Label>Zip</Form.Label>
                 <Form.Control type="password" placeholder="91001" />
 
               </Form.Group>
+              </div>
             </Row>
 
           </Form>
           <button className='btn-shipping-1'><p><a href="/Checkout2">CONTINUE TO SHIPPING METHOD</a></p></button>
           <Form>
             <Row className="mb-4">
-              <Form.Group as={Col} controlId="formGridState">
+              <Form.Group className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12" controlId="formGridState">
 
                 <Form.Select  >
                   <option>2. Shipping Method</option>

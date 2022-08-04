@@ -13,14 +13,14 @@ export default function checkout4() {
       <h3 className='guesth3'>Guest Checkout</h3>
       <div className="aem-Grid aem-Grid--12">
         <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12">
-          <div className='guest2'>
+          <div className='checkout_2'>
             <div className="aem-Grid aem-Grid--12">
               <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                <h5 className='guesth5'>Shipping Information</h5>
-                <p className='guest1'>q_farhan@gmail.com <br />+1 (555) 229-3367</p>
+                <h5 className='checkout_h5'>Shipping Information</h5>
+                <p className='checkout_1'>q_farhan@gmail.com <br />+1 (555) 229-3367</p>
               </div>
               <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                <div className='guestp'>
+                <div className='checkout_p'>
                   <p>Qadim Farhan </p>
                   <p> 1098 Wapello Street </p>
                   <p>Altadena, California 91001 </p>
@@ -28,7 +28,7 @@ export default function checkout4() {
                 </div>
               </div>
               <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                <p className='guest3'><img alt="Venia_alt" src={edit} />Edit</p>
+                <p className='checkout_3'><img alt="Venia_alt" width={20} src={edit} />Edit</p>
               </div>
             </div>
           </div>
@@ -37,12 +37,12 @@ export default function checkout4() {
               <div className="aem-Grid aem-Grid--12">
 
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                  <h5 className='guesth5'>Shipping Information</h5>
-                  <p className='guest1'>q_farhan@gmail.com <br />+1 (555) 229-3367</p>
+                  <h5 className='checkout_h5'>Shipping Information</h5>
+                  <p className='checkout_1'>q_farhan@gmail.com <br />+1 (555) 229-3367</p>
                 </div>
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
 
-                  <div className='guestp'>
+                  <div className='checkout_p'>
                     <p>Qadim Farhan </p>
                     <p> 1098 Wapello Street </p>
                     <p>Altadena, California 91001 </p>
@@ -50,7 +50,7 @@ export default function checkout4() {
                   </div>
                 </div>
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                  <p className='guest3'><img alt="Venia_alt" src={edit} />Edit</p>
+                  <p className='checkout_3'><img alt="Venia_alt" width={20} src={edit} />Edit</p>
                 </div>
               </div>
             </div>
@@ -60,12 +60,12 @@ export default function checkout4() {
               <div className="aem-Grid aem-Grid--12">
 
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                  <h5 className='guesth5'>Payment Information</h5>
-                  <p className='guest1'>Credit Card <br /> Visa ending in 4567</p>
+                  <h5 className='checkout_h5'>Payment Information</h5>
+                  <p className='checkout_1'>Credit Card <br /> Visa ending in 4567</p>
                 </div>
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
 
-                  <div className='guestp'>
+                  <div className='checkout_p'>
                     {/* <p>Qadim Farhan </p>
                     <p> 1098 Wapello Street </p>
                     <p>Altadena, California 91001 </p>
@@ -73,7 +73,7 @@ export default function checkout4() {
                   </div>
                 </div>
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                  <p className='guest3'><img alt="Venia_alt" src={edit} />Edit</p>
+                  <p className='checkout_3'><img alt="Venia_alt" width={20} src={edit} />Edit</p>
                 </div>
               </div>
             </div>
@@ -132,13 +132,9 @@ export default function checkout4() {
                         </div>
                     </div>
                 </div >
-                <div className="aem-GridColumn aem-GridColumn--default--8">
-                    <p>You will also receive an email with the details and we will let you know when your order has shipped.</p>
-               <br/>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. For assistance call Support at 1-800-867-5309, M - F, 9am - 8pm EST.</p>
-                </div>
             </div>
       <button className='main-btn review_btn'><p><a href="/OrderSuccessful">PLACE ORDER</a></p></button>
+      <p className='stage4_p'>By clicking confirm order you agree to our <b>Terms and Conditions</b></p>
     </div>
   )
 }

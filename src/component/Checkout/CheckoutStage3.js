@@ -13,14 +13,14 @@ export default function Review() {
       <h3 className='guesth3'>Guest Checkout</h3>
       <div className="aem-Grid aem-Grid--12">
         <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12">
-          <div className='guest2'>
+          <div className='checkout_2'>
             <div className="aem-Grid aem-Grid--12">
               <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                <h5 className='guesth5'>Shipping Information</h5>
-                <p className='guest1'>q_farhan@gmail.com <br />+1 (555) 229-3367</p>
+                <h5 className='checkout_h5'>Shipping Information</h5>
+                <p className='checkout_1'>q_farhan@gmail.com <br />+1 (555) 229-3367</p>
               </div>
               <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                <div className='guestp'>
+                <div className='checkout_p'>
                   <p>Qadim Farhan </p>
                   <p> 1098 Wapello Street </p>
                   <p>Altadena, California 91001 </p>
@@ -28,7 +28,7 @@ export default function Review() {
                 </div>
               </div>
               <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                <p className='guest3'><img alt="Venia_alt" src={edit} />Edit</p>
+                <p className='checkout_3'><img alt="Venia_alt" width={20} src={edit} />Edit</p>
               </div>
             </div>
           </div>
@@ -37,12 +37,12 @@ export default function Review() {
               <div className="aem-Grid aem-Grid--12">
 
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                  <h5 className='guesth5'>Shipping Information</h5>
-                  <p className='guest1'>q_farhan@gmail.com <br />+1 (555) 229-3367</p>
+                  <h5 className='checkout_h5'>Shipping Information</h5>
+                  <p className='checkout_1'>q_farhan@gmail.com <br />+1 (555) 229-3367</p>
                 </div>
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
 
-                  <div className='guestp'>
+                  <div className='checkout_p'>
                     <p>Qadim Farhan </p>
                     <p> 1098 Wapello Street </p>
                     <p>Altadena, California 91001 </p>
@@ -50,7 +50,7 @@ export default function Review() {
                   </div>
                 </div>
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                  <p className='guest3'><img alt="Venia_alt" src={edit} />Edit</p>
+                  <p className='checkout_3'><img alt="Venia_alt" width={20} src={edit} />Edit</p>
                 </div>
               </div>
             </div>
@@ -83,33 +83,45 @@ export default function Review() {
       <div className='pay1'>
         <p>3. Payment Information</p>
       </div>
-      <input type="radio" id="html" value="HTML" />
+      <input type="radio" id="html" value="HTML" />&nbsp;&nbsp;
       <label for="html">Credit Card</label><br />
       <div className="aem-Grid aem-Grid--12">
-        <div className="aem-GridColumn aem-GridColumn--default--4">
+        <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12">
           <Row className="mb-3">
-            <Form.Group as={Col} controlId="formGridEmail">
+          <div className="aem-Grid aem-Grid--12">
+            <Form.Group className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12" controlId="formGridEmail">
               <Form.Label>Name on Card</Form.Label>
               <Form.Control type="email" />
             </Form.Group>
+            </div>
           </Row>
           <Row className="mb-3">
-            <Form.Group as={Col} controlId="formGridEmail">
+          <div className="aem-Grid aem-Grid--12">
+            <Form.Group className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12" controlId="formGridEmail">
               <Form.Label>Credit Card Number</Form.Label>
               <Form.Control type="email" />
             </Form.Group>
+            </div>
           </Row>
           <Row className="mb-3">
-            <Form.Group as={Col} controlId="formGridCity">
+          <div className="aem-Grid aem-Grid--12">
+            <Form.Group className="aem-GridColumn aem-GridColumn--default--8 mr-5 aem-GridColumn--phone--12" controlId="formGridCity">
               <Form.Label>Expiration Date</Form.Label>
               <Form.Control />
             </Form.Group>
 
-            <Form.Group as={Col} controlId="formGridState">
+            <Form.Group className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12" controlId="formGridState">
               <Form.Label>CVV</Form.Label>
               <Form.Control />
             </Form.Group>
+            </div>
           </Row>
+          <input type="checkbox" id="html" value="HTML" />&nbsp;&nbsp;
+      <label for="html">Billing address same as shipping address</label><br />
+      <hr />
+      <input type="radio" id="html" value="HTML" />&nbsp;&nbsp;
+      <label for="html">Paypal</label><br />
+      <hr />
         </div >
       </div>
       <button className='main-btn'><p><a href="/Checkout4">CONTINUE TO REVIEW ORDER</a></p></button>

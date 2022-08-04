@@ -30,7 +30,7 @@ function Breadcrumb() {
         <div className="aem-GridColumn aem-GridColumn--default--9">
           <div className="aem-Grid aem-Grid--12">
             <div className="aem-GridColumn aem-GridColumn--default--10">
-              <h6>38 Results</h6>
+              <h6></h6>
             </div>
             <div className="aem-GridColumn aem-GridColumn--default--2">
               <select name="Sort by Latest" id="Sort by Latest" className='sort_1'>

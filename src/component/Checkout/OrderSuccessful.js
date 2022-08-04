@@ -15,15 +15,15 @@ export default function Review() {
                     <div>
                         <div className="aem-Grid aem-Grid--12">
                             <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12">
-                                <h5 className='guesth5'>Shipping Information</h5>
-                                <p className='guest1'>q_farhan@gmail.com <br />+1 (555) 229-3367<br /><br /><br />Qadim Farhan <br />1098 Wapello Street<br />Altadena, California 91001 <br /><p>United States</p></p>
+                                <h5 className='checkout_h5'>Shipping Information</h5>
+                                <p className='checkout_1'>q_farhan@gmail.com <br />+1 (555) 229-3367<br /><br /><br />Qadim Farhan <br />1098 Wapello Street<br />Altadena, California 91001 <br /><p>United States</p></p>
 
                             </div>
                             <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12">
-                                <h5 className='guesth5'>Shipping Method</h5>
-                                <p className='guest1'>Standard Shipping<br /> Est. delivery in 4 - 8 business days <br />FREE</p>
-                                <h5 className='guesth5'>Payment Information</h5>
-                                <p className='guest1'>Credit Card <br /> Visa ending in 4567</p>
+                                <h5 className='checkout_h5'>Shipping Method</h5>
+                                <p className='checkout_1'>Standard Shipping<br /> Est. delivery in 4 - 8 business days <br />FREE</p>
+                                <h5 className='checkout_h5'>Payment Information</h5>
+                                <p className='checkout_1'>Credit Card <br /> Visa ending in 4567</p>
 
                             </div>
                         </div>
@@ -39,9 +39,9 @@ export default function Review() {
                                 <div className="card-success">
                                     <h3>Give us a follow to SAVE 20% on your next order.</h3>
                                     <div className="social-media-icons">
-                                    <img src={instagram} height={40} width={35} />
-                                    <img src={facebook} height={40} width={35} />
-                                    <img src={twitter} height={40} width={35} />
+                                    <img src={instagram} height={40} width={40} />
+                                    <img src={facebook} height={40} width={40} />
+                                    <img src={twitter} height={40} width={40} />
                                     
                                     </div>
                                 </div>
@@ -78,7 +78,7 @@ export default function Review() {
                         </div>
                     </div>
                 </div >
-                <div className="aem-GridColumn aem-GridColumn--default--8">
+                <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12">
                     <p>You will also receive an email with the details and we will let you know when your order has shipped.</p>
                <br/>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. For assistance call Support at 1-800-867-5309, M - F, 9am - 8pm EST.</p>

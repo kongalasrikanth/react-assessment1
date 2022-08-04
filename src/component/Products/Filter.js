@@ -12,13 +12,13 @@ function Filter() {
                 <div className='attribute'>
 
                     <h6>Categories</h6>
-                    <input type="checkbox" id="option" name="option" value="option" />
+                    <input type="checkbox" id="option" name="option" value="option" />&nbsp;
                     <label>Jewellery</label> <br />
-                    <input type="checkbox" id="option" name="option" value="option" />
+                    <input type="checkbox" id="option" name="option" value="option" />&nbsp;
                     <label>Electronics</label> <br />
-                    <input type="checkbox" id="option" name="option" value="option" />
+                    <input type="checkbox" id="option" name="option" value="option" />&nbsp;
                     <label>Men's Clothing</label> <br />
-                    <input type="checkbox" id="option" name="option" value="option" />
+                    <input type="checkbox" id="option" name="option" value="option" />&nbsp;
                     <label>Women's Clothing</label> <br />
                 </div>
             </div>

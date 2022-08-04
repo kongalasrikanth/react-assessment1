@@ -181,12 +181,12 @@ hr {
 .card {
 	transition: all 1s linear;
 	// width: 349px;
-height: 320px;
+// height: 320px;
 	margin: 5px;
 }
 
 .card-footer {
-	background: transparent;
+	background: #fff !important;
 	border-top: transparent;
 	transition: all 1s linear;
 
@@ -197,6 +197,10 @@ height: 320px;
 
 p {
 	margin-bottom: 0px !important;
+	font-family: "muli" !important;
+}
+h2,h6{
+	font-family: "muli" !important;
 }
 
 .img-container {
@@ -554,10 +558,9 @@ button {
 input[type="text"] {
 	background: transparent;
 	border-radius: 6px;
-	font-family: "Montserrat";
+	font-family: "muli";
 	font-size: 12px;
 	font-weight: 400;
-	letter-spacing: 0.2em;
 	line-height: 24px;
 	height: 42px;
 	padding-left: 20px;
@@ -569,10 +572,9 @@ input[type="text"] {
 input[type="email"] {
 	background: transparent;
 	border-radius: 6px;
-	font-family: "Montserrat";
+	font-family: "muli";
 	font-size: 12px;
 	font-weight: 400;
-	letter-spacing: 0.2em;
 	line-height: 24px;
 	height: 42px;
 	padding-left: 20px;
@@ -584,10 +586,9 @@ input[type="email"] {
 input[type="password"] {
 	background: transparent;
 	border-radius: 6px;
-	font-family: "Montserrat";
+	font-family: "muli";
 	font-size: 12px;
 	font-weight: 400;
-	letter-spacing: 0.2em;
 	line-height: 24px;
 	height: 42px;
 	padding-left: 20px;
@@ -617,7 +618,7 @@ input[type="checkbox"] {
 			label {
 				color: #000;
 				cursor: pointer;
-				font-size: 11px;
+				font-size: 14px;
 				font-weight: 400;
 			}
 		}
@@ -641,7 +642,7 @@ input[type="checkbox"] {
 }
 
 .title_hr {
-	border-bottom: 6px solid blue;
+	border-bottom: 6px solid #1363DF;
 	margin-top: 63px !important;
 	width: 100px;
 	margin: 0px auto;
@@ -1041,7 +1042,7 @@ input[type="checkbox"] {
 	padding: 1rem 1.25rem;
 	background-color:  #1c1b1bcc;
 	
-	border-bottom: 8px solid blue;
+	border-bottom: 8px solid #1363DF;
 	color: #fff;
 	position: relative;
     bottom: 54px;
@@ -1125,7 +1126,7 @@ input[type="checkbox"] {
 .line{
 	width:80px;
 	height: 5px;
-	background: blue;
+	background: #1363DF;
 }
 .mobile_view{
 	display: none;

@@ -14,17 +14,17 @@ export default function Guestcheckout() {
         <div className="aem-Grid aem-Grid--12">
 
           <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn--phone--12">
-            <div className='guest2'>
+            <div className='checkout_2'>
               <div className="aem-Grid aem-Grid--12">
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
 
-                  <h5 className='guesth5'>Shipping Information</h5>
-                  <p className='guest1'>q_farhan@gmail.com <br />+1 (555) 229-3367</p>
+                  <h5 className='checkout_h5'>Shipping Information</h5>
+                  <p className='checkout_1'>q_farhan@gmail.com <br />+1 (555) 229-3367</p>
                 </div>
 
 
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                  <div className='guestp'>
+                  <div className='checkout_p'>
                     <p>Qadim Farhan </p>
                     <p> 1098 Wapello Street </p>
                     <p>Altadena, California 91001 </p>
@@ -32,11 +32,11 @@ export default function Guestcheckout() {
                   </div>
                 </div>
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
-                  <p className='guest3'><img alt="Venia_alt" src={edit} />Edit</p>
+                  <p className='checkout_3'><img alt="Venia_alt" width={20} src={edit} />Edit</p>
                 </div>
               </div>
             </div>
-            <h6 className='guest4'>2. Shipping Method</h6>
+            <h6 className='checkout_4'>2. Shipping Method</h6>
             <div>
               <input type="radio" id="html" value="HTML" />
               <label for="html">Standard Shipping (4-8 business days via USPS) FREE</label><br />

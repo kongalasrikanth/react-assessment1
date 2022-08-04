@@ -4,16 +4,12 @@ import Navbar from './component/Navigation/Navbar';
 import { Routes, Route } from 'react-router-dom';
 import Productlist from './component/Products/Productlist';
 import Product from './component/Products/Product';
-import Basket from './component/Checkout/Basket';
+import Chekout from './component/Checkout/Chekout';
 import { useEffect, useState } from 'react';
 import Detail from './component/Navigation/Detail';
 import Review from './component/Checkout/CheckoutStage3';
 import Filter from './component/Products/Filter';
 import Footer from './component/Navigation/Footer';
-// import Signin from './component/Auth/';
-// import Signout from './component/Auth/';
-// import Signup from "./component/Checkout/Create";
-// import Navbardesc from './component/Navigation/Navbardesc';
 import Shipping from './component/Checkout/Shipping';
 import Home from './component/Navigation/Home';
 import Checkout from './component/Checkout/CheckoutStage1';
@@ -55,23 +51,19 @@ function App() {
 
 
       <Navbar countCartItems={cartItems.length} setCategory={setCategory} selectedCategory={category} />
-      {/* <Navbardesc countCartItems={cartItems.length} setCategory={setCategory} selectedCategory={category} /> */}
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/Mens' element={<Header category={category} />} />
         <Route exact path='/about' element={<Detail />} />
         <Route exact path='/filter' element={<Filter />} />
         <Route exact path='/Productlist' element={<Productlist category="" />} />
-        {/* <Route exact path='/' element={<Signin />} /> */}
         <Route exact path='/Checkout2' element={<Guestcheckout />} />
         <Route exact path='/Checkout3' element={<Review />} />
         <Route exact path='/Checkout4' element={<Checkout4 />} />
         <Route exact path='/Checkout1' element={<Checkout />} />
         <Route exact path='/OrderSuccessful' element={<OrderSuccess />} />
-        {/* <Route exact path='/signup' element={<Signup />} />
-        <Route exact path='/' element={<Signout />} /> */}
         <Route exact path='/products/:id' element={<Product onAdd={onAdd} />} />
-        <Route exact path='/cart' element={<Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
+        <Route exact path='/cart' element={<Chekout cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
         <Route exact path='/Shipping' element={<Shipping cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
       </Routes>
       <Footer />

@@ -82,7 +82,7 @@ export default function Home({ name, title }) {
                             <div style={{
                                 width: "674px",
                                 height: "445px"
-                            }}><img width="100%" src="https://i.ibb.co/rmWMYvk/Carousel-image.jpg" /></div>
+                            }}><img width="100%" src="https://i.ibb.co/kqC8SsF/carousel-01-01.jpg" /></div>
 
                         </Slide>
                     </div>

@@ -14,7 +14,7 @@ export default function Shipping(props) {
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
 
   return (
-    <div className="container basket">
+    <div className="container products">
       <h2>Your Shopping Bag</h2>
       <hr />
       <div className="aem-Grid aem-Grid--12">
